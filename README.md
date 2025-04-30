@@ -3,7 +3,7 @@
 [![JSR](https://jsr.io/badges/@alg/zhangshasha)](https://jsr.io/@alg/zhangshasha)
 [![License](https://img.shields.io/badge/MIT-green?label=license)](https://github.com/alg-js/zhangshasha/blob/main/LICENSE)
 
-Tree edit distances
+Tree edit distances using the Zhang-Shasha algorithm
 
 ## Install
 

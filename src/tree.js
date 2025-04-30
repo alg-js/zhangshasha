@@ -2,9 +2,6 @@
 
 export const lambda = "Λ";
 
-
-
-
 export function postorder(tree) {
     const s1 = [tree];
     const s2 = [];

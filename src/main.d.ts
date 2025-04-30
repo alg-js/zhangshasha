@@ -1,4 +1,10 @@
-import type {Tree} from "./tree.d.ts";
+/**
+ * A tree type consisting of a root and an ordered list of children.
+ */
+export type Tree<T> = {
+  root: T;
+  children: Tree<T>[];
+};
 
 /**
  * A helper function to create trees
