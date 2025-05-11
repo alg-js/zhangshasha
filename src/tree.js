@@ -1,7 +1,14 @@
-/* @ts-self-types="./tree.d.ts" */
-
+/**
+ * A singleton used in change operations
+ */
 export const lambda = "Λ";
 
+/**
+ * A postordering of the nodes in the given tree.
+ *
+ * @template T
+ * @param {Tree<T>} tree
+ */
 export function postorder(tree) {
     const s1 = [tree];
     const s2 = [];
@@ -14,6 +21,12 @@ export function postorder(tree) {
     return s2;
 }
 
+/**
+ * Postorder traversal of keyroot indices for keyroots in the given tree
+ *
+ * @template T
+ * @param {Tree<T>} tree
+ */
 export function keyroots(tree) {
     const s1 = [[true, tree]];
     const s2 = [];
@@ -28,6 +41,12 @@ export function keyroots(tree) {
     return [...s2.entries().filter(([_, e]) => e).map(([i, _]) => i)];
 }
 
+/**
+ * The postorder traversal of `l(i)` for each index, i, in the given tree
+ *
+ * @template T
+ * @param {Tree<T>} tree
+ */
 export function leftmosts(tree) {
     const s1 = [tree];
     const s2 = [];
@@ -53,6 +72,13 @@ export function leftmosts(tree) {
     return indices;
 }
 
+/**
+ * The postorder enumeration of the indices of the parent of each node,
+ * The root of the tree has the parent Lambda (i.e. indicating no parent)
+ *
+ * @template T
+ * @param {Tree<T>} tree
+ */
 export function parents(tree) {
     const s1 = [[tree, lambda]];
     const s2 = [];

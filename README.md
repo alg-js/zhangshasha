@@ -13,6 +13,10 @@ deno add jsr:@alg/zhangshasha
 
 ## Example
 
+Trees must be objects of the form `Tree<T> = {root: T, cildren: Tree<T>[]}`.
+A helper function, `t(root, ...children)`, constructs trees from root node
+values.
+
 ```javascript
 import {distance, t} from "@alg/zhangshasha";
 
@@ -28,18 +32,18 @@ const tree2 = t(
 );
 
 // Delete d, b, a, c; Insert x
-let dist1 = distance(tree1, tree2, {
+const dist1 = distance(tree1, tree2, {
     relabel: (e1, e2) => e1 === e2 ? 0 : 2,
-    insertion: (_) => 3,
-    deletion: (_) => 3,
+    insertion: () => 3,
+    deletion: () => 3,
 });
 console.log(dist1);  // 15
 
 // Delete c, e, g; Relabel f -> g, d -> f, b -> e, a -> x
-let dist2 = distance(tree1, tree2, {
+const dist2 = distance(tree1, tree2, {
     relabel: () => 2,
-    insertion: (_) => 3,
-    deletion: (_) => 3,
+    insertion: () => 3,
+    deletion: () => 3,
 });
 console.log(dist2);  // 17
 ```

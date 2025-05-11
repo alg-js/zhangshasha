@@ -1,8 +1,11 @@
 {
   "name": "@alg/zhangshasha",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
-  "exports": "./src/main.js",
+  "exports": {
+    ".": "./src/main.js",
+    "./types": "./src/types.d.ts"
+  },
   "lock": false,
   "publish": {
     "include": [
