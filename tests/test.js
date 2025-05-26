@@ -1,3 +1,18 @@
+/* Copyright 2025 James Finnie-Ansley
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import {assertEquals} from "jsr:@std/assert";
 import {distance} from "@alg/zhangshasha";
 import {postorder, keyroots, leftmosts, parents, lambda} from "../src/tree.js";
@@ -146,7 +161,7 @@ Deno.test({
         assertEquals(parents(tree3), [4, 2, 4, 4, 6, 6, lambda]);
         assertEquals(
             parents(tree4),
-            [6, 2, 6, 5, 5, 6, 14, 8, 13, 13, 13, 12, 13, 14, lambda]
+            [6, 2, 6, 5, 5, 6, 14, 8, 13, 13, 13, 12, 13, 14, lambda],
         );
-    }
-})
+    },
+});

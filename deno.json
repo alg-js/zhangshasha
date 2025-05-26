@@ -1,7 +1,7 @@
 {
   "name": "@alg/zhangshasha",
-  "version": "0.0.3",
-  "license": "MIT",
+  "version": "0.0.4",
+  "license": "Apache-2.0",
   "exports": {
     ".": "./src/main.js",
     "./types": "./src/types.d.ts"
