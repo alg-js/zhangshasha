@@ -3,7 +3,10 @@
 [![JSR](https://jsr.io/badges/@alg/zhangshasha)](https://jsr.io/@alg/zhangshasha)
 [![License](https://img.shields.io/badge/MIT-green?label=license)](https://github.com/alg-js/zhangshasha/blob/main/LICENSE)
 
-Tree edit distances using the Zhang-Shasha algorithm
+Tree edit distances using the Zhang-Shasha algorithm.
+
+For generic string/sequence edit distances,
+see [@alg/levenshtein](https://jsr.io/@alg/levenshtein).
 
 ## Install
 
@@ -13,9 +16,8 @@ deno add jsr:@alg/zhangshasha
 
 ## Example
 
-Trees must be objects of the form `Tree<T> = {root: T, cildren: Tree<T>[]}`.
-A helper function, `t(root, ...children)`, constructs trees from root node
-values.
+Trees must be objects of the form `Tree<T> = {root: T, cildren: Tree<T>[]}`. A
+helper function, `t(root, ...children)`, constructs trees from root node values.
 
 ```javascript
 import {distance, t} from "@alg/zhangshasha";
