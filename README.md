@@ -1,7 +1,7 @@
 # @alg/zhangshasha
 
 [![JSR](https://jsr.io/badges/@alg/zhangshasha)](https://jsr.io/@alg/zhangshasha)
-[![License](https://img.shields.io/badge/Apache--2.0-green?label=license)](https://github.com/alg-js/zhangshasha/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/Apache--2.0-green?label=license)](https://codeberg.org/algjs/zhangshasha/src/branch/main/LICENSE)
 
 Tree edit distances using the Zhang-Shasha algorithm.
 
@@ -13,6 +13,27 @@ see [@alg/levenshtein](https://jsr.io/@alg/levenshtein).
 ```
 deno add jsr:@alg/zhangshasha
 ```
+
+<details>
+<summary>Other Install Options</summary>
+
+```bash
+npx jsr add @alg/zhangshasha
+```
+```bash
+bunx jsr add @alg/zhangshasha
+```
+```bash
+pnpm i jsr:@alg/zhangshasha
+```
+```bash
+yarn add jsr:@alg/zhangshasha
+```
+```bash
+vlt install jsr:@alg/zhangshasha
+```
+
+</details>
 
 ## Example
 
